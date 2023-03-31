@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 import Banner from './components/banner/banner';
+import TextField from './components/TextField/TextField';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bem-vindo ao Cat App!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TextField label="Nome" placeholder="Digite o nome do seu gatinho"/>
+      <TextField label="Cor" placeholder="Digite a cor dele/a"/>
+      <TextField label="Imagem" placeholder="Digite o endereço da foto"/>
     </div>
   );
 }
