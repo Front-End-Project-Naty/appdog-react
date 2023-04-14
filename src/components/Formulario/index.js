@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import TextField from '../TextField/TextField'
 import './Formulario.css'
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const racas = [
         'Maltês',
@@ -23,7 +23,12 @@ const Formulario = () => {
     
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('Form foi submetido =>', nome, idade, imagem)
+        props.aoCaoCadastrado({
+            nome,
+            idade,
+            imagem,
+            raca
+        })
     }
 
     return (
