@@ -6,16 +6,6 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const racas = [
-        'Maltês',
-        'Pug',
-        'Golden',
-        'SRD',
-        'Yorkshire',
-        'Husky',
-        'Buldogue Francês'
-    ]
-
     const [nome, setNome] = useState('')
     const [idade, setIdade] = useState('')
     const [imagem, setImagem] = useState('')
@@ -58,7 +48,7 @@ const Formulario = (props) => {
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label="Raças" 
-                    itens={racas}
+                    itens={props.racas}
                     valor={raca}
                     aoAlterado={valor => setRaca(valor)}
                 />

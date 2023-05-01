@@ -43,7 +43,7 @@ function App() {
     },
 
     {
-      nome: 'Buldogue Francêsês',
+      nome: 'Buldogue Francês',
       corPrimaria: 'FF5200',
       corSecundaria: 'FFB4B4',
     }
@@ -61,7 +61,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario aoCaoCadastrado={cao => aoNovoCaoAdicionado(cao)}/>
+      <Formulario racas={racas.map(raca =>raca.nome)} aoCaoCadastrado={cao => aoNovoCaoAdicionado(cao)}/>
       
       {racas.map((raca) => <Raca key={raca.nome} nome={raca.nome} corPrimaria={raca.corPrimaria} corSecundaria={raca.corSecundaria} />)}
       
