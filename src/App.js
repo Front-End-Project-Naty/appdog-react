@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Formulario from './components/Formulario';
 import Banner from './components/banner/banner';
 import Raca from './components/Raca';
+import Rodape from './components/Rodape';
 
 function App() {
 
@@ -71,7 +72,7 @@ function App() {
         caes={caes.filter(cao => cao.raca === raca.nome)}
       />)}
       
-
+      <Rodape />
     </div>
   );
 }
