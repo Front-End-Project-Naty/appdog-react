@@ -8,8 +8,9 @@ const css = { backgroundColor: props.corSecundaria}
     return (
         <section className='raca' style={css }>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
-            <Cao />
-            <Cao />
+            <div className='caes'>
+                {props.caes.map( cao => <Cao nome={cao.nome} cargo={cao.idade} imagem={cao.imagem}/>)}
+            </div>        
         </section>
     )
 }

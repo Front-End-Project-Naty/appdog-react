@@ -63,7 +63,13 @@ function App() {
       <Banner />
       <Formulario racas={racas.map(raca =>raca.nome)} aoCaoCadastrado={cao => aoNovoCaoAdicionado(cao)}/>
       
-      {racas.map((raca) => <Raca key={raca.nome} nome={raca.nome} corPrimaria={raca.corPrimaria} corSecundaria={raca.corSecundaria} />)}
+      {racas.map((raca) => <Raca 
+        key={raca.nome} 
+        nome={raca.nome} 
+        corPrimaria={raca.corPrimaria} 
+        corSecundaria={raca.corSecundaria} 
+        caes={caes.filter(cao => cao.raca === raca.nome)}
+      />)}
       
 
     </div>
