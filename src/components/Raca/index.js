@@ -9,7 +9,7 @@ const css = { backgroundColor: props.corSecundaria}
         props.caes.length > 0 ? <section className='raca' style={css }>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='caes'>
-                {props.caes.map( cao => <Cao nome={cao.nome} cargo={cao.idade} imagem={cao.imagem}/>)}
+                {props.caes.map( cao => <Cao corDeFundo={props.corPrimaria} key={cao.nome} nome={cao.nome} cargo={cao.idade} imagem={cao.imagem}/>)}
             </div>        
         </section>
         : ''

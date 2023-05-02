@@ -1,8 +1,9 @@
 import './Cao.css'
 
-const Cao = ({ nome, imagem, idade}) => {
+const Cao = ({ nome, imagem, idade, corDeFundo }) => {
+    console.log(imagem);
     return (<div className='cao'>
-        <div className='cabecalho'>
+        <div className='cabecalho'style={{ backgroundColor: corDeFundo }}>
             <img src={imagem} alt={nome}/>
         </div>
         <div className='rodape'>

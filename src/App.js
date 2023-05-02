@@ -55,14 +55,14 @@ function App() {
   const [caes, setCaes] = useState([])
 
   const aoNovoCaoAdicionado = (cao) => {
-    console.log(cao)
+    debugger
     setCaes([...caes, cao])
   }
 
   return (
     <div className="App">
       <Banner />
-      <Formulario racas={racas.map(raca =>raca.nome)} aoCaoCadastrado={cao => aoNovoCaoAdicionado(cao)}/>
+      <Formulario racas={racas.map(raca =>raca.nome)} aoCaoCadastrado={raca => aoNovoCaoAdicionado(raca)}/>
       
       {racas.map((raca) => <Raca 
         key={raca.nome} 
