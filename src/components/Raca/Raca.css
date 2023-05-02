@@ -1,8 +1,8 @@
 .raca {
     text-align: center;
     padding: 32px;
-    background-color: #ff1c8d;
-    color: black;
+    background-image: url("/public/images/background.png");
+    color: white;
 }
 
 .raca h3 {

@@ -37,13 +37,6 @@ const Formulario = (props) => {
                     aoAlterado={valor => setNome(valor)}
                 />
                 <TextField 
-                    obrigatorio={true} 
-                    label="Idade" 
-                    placeholder="Digite a idade"
-                    valor={idade}
-                    aoAlterado={valor => setIdade(valor)}
-                />
-                <TextField 
                     label="Imagem" 
                     placeholder="Digite o endereço da foto"
                     valor={imagem}
@@ -51,7 +44,7 @@ const Formulario = (props) => {
                 />            
                 <ListaSuspensa 
                     obrigatorio={true} 
-                    label="Raças" 
+                    label="Raça" 
                     itens={props.racas}
                     valor={raca}
                     aoAlterado={valor => setRaca(valor)}
